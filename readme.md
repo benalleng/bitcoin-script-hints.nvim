@@ -25,8 +25,8 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 fn retrieve_hashed_leaf_item() -> ScriptBuf {
     script! {
         // [1, 2], [3]
-        OP_DUP // you should now see [1, 2, 3], [3] here
-        OP_2 // you should see [1, 2, 3, 2], [3] here
+        OP_DUP // you should now see [1, 2, 2], [3] here
+        OP_2 // you should see [1, 2, 2, 2], [3] here
         OP_ADD // etc...
         OP_DEPTH
         OP_GREATERTHAN
