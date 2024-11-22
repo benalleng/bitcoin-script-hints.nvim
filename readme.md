@@ -17,6 +17,7 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
     require("bitcoin-script-hints").setup()
   end
 }
+```
 
 ## Example usage
 
