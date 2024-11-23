@@ -1,5 +1,5 @@
 local parsers = require('nvim-treesitter.parsers')
-local op_effects = require("bitcoin_script_hints.op_codes")
+local op_effects = require("bitcoin-script-hints.op-codes")
 
 local M = {}
 
@@ -137,7 +137,7 @@ local function process_script_content(node, bufnr, namespace)
 end
 
 function M.setup()
-  M.namespace = vim.api.nvim_create_namespace('bitcoin_script_hints')
+  M.namespace = vim.api.nvim_create_namespace('bitcoin-script-hints')
 
   -- Reprocess every time we save the file or change the buffer:
   vim.api.nvim_create_autocmd({ "BufEnter", "BufWrite", "InsertLeave" }, {
