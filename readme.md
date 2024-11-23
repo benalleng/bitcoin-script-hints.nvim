@@ -54,3 +54,7 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 ## Requirements
 - Neovim >= 0.8.0
 - nvim-treesitter
+
+## Acknowledgments
+
+This plugin was inspired by the [Script Wiz IDE](https://ide.scriptwiz.app), which does an excellent job at showing stack changes with real data.
