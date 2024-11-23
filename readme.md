@@ -1,23 +1,19 @@
-# bitcoin-script-hints.nvim
+<h1 align="center">
+bitcoin-script-hints.nvim
+</h1>
 
-Inline hints for the `script!` macro to see how the stack evolves in Bitcoin Script.
+<p align="center">
+✨ A useful neovim plugin for Bitcoin Script
+</p>
 
-## Requirements
-- Neovim >= 0.8.0
-- nvim-treesitter
+<p align="center">
+<img src="https://github.com/user-attachments/assets/d97f21dd-2e50-4dba-b854-952969a3ad4d" width="600" alt="description">
+</p>
 
-## Installation
+## How does it work?
+This plugin is intended to be used in Rust projects that use the `script!` macro (from [rust-bitcoin-script](https://github.com/Bitcoin-Wildlife-Sanctuary/rust-bitcoin-script)).
 
-Using [lazy.nvim](https://github.com/folke/lazy.nvim):
-```lua
-{
-  "t4t5/bitcoin-script-hints.nvim",
-  dependencies = { "nvim-treesitter/nvim-treesitter" },
-  config = function()
-    require("bitcoin-script-hints").setup()
-  end
-}
-```
+You can try it out with some examples from the [Bitcoin Wildlife Sanctuary](https://github.com/Bitcoin-Wildlife-Sanctuary).
 
 ## Example usage
 
@@ -37,3 +33,20 @@ fn retrieve_hashed_leaf_item() -> ScriptBuf {
     }
 }
 ```
+
+## Installation
+
+Using [lazy.nvim](https://github.com/folke/lazy.nvim):
+```lua
+{
+  "t4t5/bitcoin-script-hints.nvim",
+  dependencies = { "nvim-treesitter/nvim-treesitter" },
+  config = function()
+    require("bitcoin-script-hints").setup()
+  end
+}
+```
+
+## Requirements
+- Neovim >= 0.8.0
+- nvim-treesitter
