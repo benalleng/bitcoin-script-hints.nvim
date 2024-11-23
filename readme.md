@@ -24,10 +24,10 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 ```rust
 fn retrieve_hashed_leaf_item() -> ScriptBuf {
     script! {
-        // [1, 2], [3]
-        OP_DUP // you should now see [1, 2, 2], [3] here
-        OP_2 // you should see [1, 2, 2, 2], [3] here
-        OP_ADD // etc...
+        // [1, 2], [3] <-- Add this comment
+        OP_DUP   // (you should now see [1, 2, 2], [3] here)
+        OP_2     // (and [1, 2, 2, 2], [3] here)
+        OP_ADD   // (etc...)
         OP_DEPTH
         OP_GREATERTHAN
         OP_IF
