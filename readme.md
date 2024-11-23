@@ -13,6 +13,10 @@ bitcoin-script-hints.nvim
 ## How does it work?
 This plugin is intended to be used in Rust projects that use the `script!` macro (from [rust-bitcoin-script](https://github.com/Bitcoin-Wildlife-Sanctuary/rust-bitcoin-script)).
 
+The first line after the `script!` invocation must be in one of these formats:
+- `[X, Y]` (just the main stack)
+- `[X, Y], [Z]` (the main stack and the alt-stack)
+
 You can try it out with some examples from the [Bitcoin Wildlife Sanctuary](https://github.com/Bitcoin-Wildlife-Sanctuary).
 
 ## Example usage
