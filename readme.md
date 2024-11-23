@@ -3,7 +3,7 @@ bitcoin-script-hints.nvim
 </h1>
 
 <p align="center">
-✨ A useful neovim plugin for Bitcoin Script
+A magical neovim plugin for Bitcoin Script 🪄
 </p>
 
 <p align="center">
