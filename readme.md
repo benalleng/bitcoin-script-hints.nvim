@@ -22,6 +22,10 @@ You can try it out with some examples from the [Bitcoin Wildlife Sanctuary](http
 ## Example usage
 
 ```rust
+use bitcoin_script::{define_pushable, script};
+
+define_pushable!();
+
 fn retrieve_hashed_leaf_item() -> ScriptBuf {
     script! {
         // [1, 2], [3] <-- Add this comment
