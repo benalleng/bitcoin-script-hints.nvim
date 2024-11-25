@@ -55,6 +55,26 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 }
 ```
 
+Using [vim-plug](https://github.com/junegunn/vim-plug)
+```lua
+Plug 't4t5/bitcoin-script-hints.nvim'
+Plug 'nvim-treesitter/nvim-treesitter'
+
+" After plugin installation, add to your init.vim/init.lua:
+lua require('bitcoin-script-hints').setup()
+```
+
+Using [packer.nvim](https://github.com/wbthomason/packer.nvim):
+```lua
+use {
+  't4t5/bitcoin-script-hints.nvim',
+  requires = { 'nvim-treesitter/nvim-treesitter' },
+  config = function()
+    require('bitcoin-script-hints').setup()
+  end
+}
+```
+
 ## Requirements
 - Neovim >= 0.8.0
 - nvim-treesitter
