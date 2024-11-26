@@ -64,7 +64,11 @@ local OP_MAX = require('bitcoin-script-hints.op-codes.OP_MAX')
 local OP_WITHIN = require('bitcoin-script-hints.op-codes.OP_WITHIN')
 
 -- Crypto:
-local OP_HASH = require('bitcoin-script-hints.op-codes.OP_HASH')
+local OP_RIPEMD160 = require('bitcoin-script-hints.op-codes.OP_RIPEMD160')
+local OP_SHA1 = require('bitcoin-script-hints.op-codes.OP_SHA1')
+local OP_SHA256 = require('bitcoin-script-hints.op-codes.OP_SHA256')
+local OP_HASH160 = require('bitcoin-script-hints.op-codes.OP_HASH160')
+local OP_HASH256 = require('bitcoin-script-hints.op-codes.OP_HASH256')
 local OP_CHECKSIG = require('bitcoin-script-hints.op-codes.OP_CHECKSIG')
 local OP_CHECKSIGVERIFY = require('bitcoin-script-hints.op-codes.OP_CHECKSIGVERIFY')
 local OP_CHECKMULTISIG = require('bitcoin-script-hints.op-codes.OP_CHECKMULTISIG')
@@ -158,11 +162,11 @@ return {
   OP_WITHIN = OP_WITHIN,
 
   -- Crypto:
-  OP_RIPEMD160 = OP_HASH,
-  OP_SHA1 = OP_HASH,
-  OP_SHA256 = OP_HASH,
-  OP_HASH160 = OP_HASH,
-  OP_HASH256 = OP_HASH,
+  OP_RIPEMD160 = OP_RIPEMD160,
+  OP_SHA1 = OP_SHA1,
+  OP_SHA256 = OP_SHA256,
+  OP_HASH160 = OP_HASH160,
+  OP_HASH256 = OP_HASH256,
   OP_CODESEPARATOR = OP_NOP,
   OP_CHECKSIG = OP_CHECKSIG,
   OP_CHECKSIGVERIFY = OP_CHECKSIGVERIFY,

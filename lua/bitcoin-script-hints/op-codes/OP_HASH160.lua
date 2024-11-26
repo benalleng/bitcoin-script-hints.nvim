@@ -8,6 +8,7 @@ return function(state)
   local new_state = vim.deepcopy(state)
   local val = table.remove(new_state.main)
   -- Create hashed representation by wrapping in H()
-  table.insert(new_state.main, "H(" .. tostring(val) .. ")")
+  table.insert(new_state.main, "HASH160(" .. tostring(val) .. ")")
   return new_state
 end
+
